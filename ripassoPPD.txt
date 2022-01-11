@@ -1,0 +1,25 @@
+
+	1	2	3	4	5	6
+A	0	1	1	1	1	0							
+B	1	1	1	1	0	1
+C	1	1	1	0	1	1
+D	1	1	0	1	1	1
+
+2^4 -1 = 15.
+n= 4 numero di utenti.
+Le possibili combinazioni sono 15 perchè ogni utente può avere o non avere il permesso ad una certa risorsa (0,1) -> da qui deriva il 2
+ed inoltre 4 perchè riguarda ogni possibili combinazione di utenti. -1 perchè escludo l'insieme vuoto.
+Quindi in totale alla peggio avrò 15 chiavi.
+Assegno almeno una chiave ad ogni combinazione.
+ne avrò così tante perchè rispecchiano tutte le possibili combinazioni tra utenti, ma effettivamente non tutte saranno direttametne collegate tra ad una risorsa.
+Però saranno comunque collegate, perciò avrò tutte le possibili combinazioni ognuna delle quali sarà collegata ad AL PIù una risorsa
+SLIDE 5. 72
+
+ACL associata ad una risorda = gruppo di utenti che può accedere a quella risorsa.
+
+Per ricordarmelo uso bit vector.
+vettore di n utenti ognino può essere presente o no quindi 1 o 0 quindi 2 possibilità alla n volte.
+2 * 2 * 2 * 2 n volte quindi 2 ^n
+avrò insiemi singleton, insiemi di due utenti ecc... fino ad arrivare all'insieme che li contiene tutti.
+
+Poi alla fine tengo solo chiavi degli utenti e dei gruppi legati alle ACL.

@@ -1,0 +1,8 @@
+confidentiality edit: cambio i record con un altro dataset, però non distruggo completamente la statistica, se avevo una persona giovane la cambio una una
+persona giovane dell'altro dataset e così via
+
+p pertenge rules
+16 >= p   la cella è protetta se p è <= a 16, p è il grado di sensibilità.
+Quindi con p <= 16 io dico che alice è protetta ad esempio con 10 ovvero a me va bene che il valore di alice sia scoperto
+in un intervallo del 10%, se lo stimano più vicino del 10% non va bene, ma io so che p a cui arrivano è 16 perciò per p <= 16 
+alice è protetta perchè non arrivano a un valore minore di 16% di intervalllo
